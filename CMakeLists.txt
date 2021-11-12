@@ -5,8 +5,8 @@ project(libsodium)
 include_directories(src/libsodium/include)
 include_directories(src/libsodium/include/sodium)
 
-include_directories(${CMAKE_BINARY_DIR}/src/libsodium/include)
-include_directories(${CMAKE_BINARY_DIR}/src/libsodium/include/sodium)
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/src/libsodium/include)
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/src/libsodium/include/sodium)
 
 set(VERSION "1.0.18")
 set(SODIUM_LIBRARY_VERSION_MAJOR "11")
