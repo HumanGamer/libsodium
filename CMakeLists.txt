@@ -5,8 +5,8 @@ project(libsodium)
 include_directories(src/libsodium/include)
 include_directories(src/libsodium/include/sodium)
 
-include_directories(${CMAKE_CURRENT_BINARY_DIR}/src/libsodium/include)
-include_directories(${CMAKE_CURRENT_BINARY_DIR}/src/libsodium/include/sodium)
+include_directories(${libsodium_BINARY_DIR}/src/libsodium/include)
+include_directories(${libsodium_BINARY_DIR}/src/libsodium/include/sodium)
 
 set(VERSION "1.0.18")
 set(SODIUM_LIBRARY_VERSION_MAJOR "11")
@@ -148,7 +148,7 @@ set (SODIUM_SRC
     src/libsodium/include/sodium/crypto_aead_aegis256.h
     src/libsodium/include/sodium/crypto_hash_sha512.h
     src/libsodium/include/sodium/core.h
-    ${CMAKE_BINARY_DIR}/src/libsodium/include/sodium/version.h
+    ${libsodium_BINARY_DIR}/src/libsodium/include/sodium/version.h
     src/libsodium/include/sodium/export.h
     src/libsodium/include/sodium/crypto_core_salsa20.h
     src/libsodium/include/sodium/crypto_shorthash_siphash24.h
